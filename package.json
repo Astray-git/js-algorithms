@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "tslint  --project .",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:prod": "npm run lint && npm run test -- --coverage --no-cache"
   },
   "pre-commit": [
     "lint",
